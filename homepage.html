@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SmartMoney - Главная</title>
+</head>
+<body id="homepage-body">
+    <header>
+        <a href="index.html"><img src="assets/logo.svg" alt="Logo" class="logo"></a>
+        <nav>
+            <ul class="navbar">
+                <li class="link__active"><a href="#">Главная</a></li>
+                <li><a href="depositpage.html">Счета</a></li>
+                <li><a href="#">Статистика</a></li>
+                <li><a href="categoriespage.html">Категории</a></li>
+                <li><a href="#">Настройки</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="notification"><img src="assets/notification.svg" alt="Notification"></a>
+        <a href="profile.html"><img src="assets/profile.svg" alt="Profile" class="profile"></a>
+    </header>
+    <main>
+        <div class="home-page">
+            <div class="form-group">
+                <div class="dropdown">
+                    <div class="dropdown__btns">
+                        <button type="button" class="dropdown__button">
+                            Выберите категорию 
+                            <span class="dropdown__button--span">
+                                <img src="assets/blackArrowDown.svg" alt="arrow">
+                            </span>
+                            <span class="dropdown__button--span-second hidden">
+                                <img src="assets/whiteArrowUp.svg" alt="arrow">
+                            </span>
+                        </button>
+                        <button type="button" class="dropdown__button--add">Добавить операцию</button>
+                    </div>                 
+                    <ul class="dropdown__list">
+                        <li class="dropdown__list-item" data-value="credit">
+                            Кредитная карта, Тинькофф
+                            <span class="dropdown__span">24 543, 73 ₽ </span> 
+                            <span class="dropdown__button--span hidden">
+                                <img src="assets/blackArrowDown.svg" alt="arrow">
+                            </span>
+                            <span class="dropdown__button--span-second hidden">
+                                <img src="assets/whiteArrowUp.svg" alt="arrow">
+                            </span>
+                        </li>
+                        <li class="dropdown__list-item" data-value="all">
+                            Все счета
+                            <span class="dropdown__span">55 408, 25 ₽ </span> 
+                            <span class="dropdown__button--span hidden">
+                                <img src="assets/blackArrowDown.svg" alt="arrow">
+                            </span>
+                            <span class="dropdown__button--span-second hidden">
+                                <img src="assets/whiteArrowUp.svg" alt="arrow">
+                            </span>
+                        </li>
+                        <li class="dropdown__list-item" data-value="salary">
+                            Зарплатная карта
+                            <span class="dropdown__span">30 768, 45 ₽ </span> 
+                            <span class="dropdown__button--span hidden">
+                                <img src="assets/blackArrowDown.svg" alt="arrow">
+                            </span>
+                            <span class="dropdown__button--span-second hidden">
+                                <img src="assets/whiteArrowUp.svg" alt="arrow">
+                            </span>
+                        </li>
+                        <li class="dropdown__list-item" data-value="tinkoff">
+                            Тинькофф
+                            <span class="dropdown__span">10 343, 00 ₽ </span> 
+                            <span class="dropdown__button--span hidden">
+                                <img src="assets/blackArrowDown.svg" alt="arrow">
+                            </span>
+                            <span class="dropdown__button--span-second hidden">
+                                <img src="assets/whiteArrowUp.svg" alt="arrow">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="periods">
+                <div>
+                    <div class="period">
+                        <label for="period" class="period__text">Период</label>
+                        <button type="button" class="period__button" id="period">
+                            Выберите период 
+                            <span class="period__button--span">
+                                <img src="assets/whiteArrowDown.svg" alt="arrow">
+                            </span>
+                            <span class="period__button--span-second hidden">
+                                <img src="assets/whiteArrowDown.svg" alt="arrow">
+                            </span>
+                        </button>
+                        <ul class="period__list">
+                            <li class="period__list--item" data-value="day">
+                                День 
+                            </li>
+                            <li class="period__list--item" data-value="week">
+                                Неделя
+                            </li>
+                            <li class="period__list--item" data-value="month">
+                                Месяц
+                            </li>
+                            <li class="period__list--item" data-value="yourPeriod">
+                                Свой период
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="period">
+                    <label for="start" class="period__text">Начало периода</label>
+                    <input type="date" class="period__input" id="start">
+                </div>
+                <div class="period">
+                    <label for="end" class="period__text">Конец периода</label>
+                    <input type="date" class="period__input" id="end">
+                </div>
+            </div>
+            <h1 class="bg-text">smartmoney</h1>
+            <div class="info-money">
+                <div class="scroll">
+                    <div class="info-money__history">
+                        <p class="info-money__history--text">История</p>
+                        <div class="info-money__days">
+                            <div class="info-money__day">
+                                <p class="info-money__day--date">12 апреля</p>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle products-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Продукты</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-800,00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle transfers-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Переводы</p>
+                                        <span class="info-money__day--category">Тинькофф</span>
+                                    </div>
+                                    <span class="info-money__day--money">-1000,00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle house-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Все для дома</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-330,76 ₽</span>
+                                </div>
+                            </div>
+                            <div class="info-money__day">
+                                <p class="info-money__day--date">11 апреля</p>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle products-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Продукты</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-445,00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle salary-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Зарплата</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money income">+30 000, 00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle required-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Обязательный платеж</p>
+                                        <span class="info-money__day--category">Сбер</span>
+                                    </div>
+                                    <span class="info-money__day--money">-22 000, 00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle entertainment-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Развлечения</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-1 767, 00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle grants-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Стипендия</p>
+                                        <span class="info-money__day--category">Сбер</span>
+                                    </div>
+                                    <span class="info-money__day--money income">+2 465, 00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle beauty-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Красота и здоровье</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-330, 76 ₽</span>
+                                </div>
+                            </div>
+                            <div class="info-money__day">
+                                <p class="info-money__day--date">10 апреля</p>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle cafe-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Кафе и рестораны</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-565,00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle transfers-income-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Переводы</p>
+                                        <span class="info-money__day--category">Тинькофф</span>
+                                    </div>
+                                    <span class="info-money__day--money income">+4 500,00 ₽</span>
+                                </div>
+                            </div>
+                            <div class="info-money__day">
+                                <p class="info-money__day--date">9 апреля</p>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle products-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Продукты</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-800,00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle transfers-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Переводы</p>
+                                        <span class="info-money__day--category">Тинькофф</span>
+                                    </div>
+                                    <span class="info-money__day--money">-1000,00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle house-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Все для дома</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-330,76 ₽</span>
+                                </div>
+                            </div>
+                            <div class="info-money__day">
+                                <p class="info-money__day--date">8 апреля</p>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle products-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Продукты</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-445,00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle salary-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Зарплата</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money income">+30 000, 00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle required-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Обязательный платеж</p>
+                                        <span class="info-money__day--category">Сбер</span>
+                                    </div>
+                                    <span class="info-money__day--money">-22 000, 00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle entertainment-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Развлечения</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-1 767, 00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle grants-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Стипендия</p>
+                                        <span class="info-money__day--category">Сбер</span>
+                                    </div>
+                                    <span class="info-money__day--money income">+2 465, 00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle beauty-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Красота и здоровье</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-330, 76 ₽</span>
+                                </div>
+                            </div>
+                            <div class="info-money__day">
+                                <p class="info-money__day--date">7 апреля</p>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle cafe-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Кафе и рестораны</p>
+                                        <span class="info-money__day--category">Зарплатная карта</span>
+                                    </div>
+                                    <span class="info-money__day--money">-565,00 ₽</span>
+                                </div>
+                                <div class="info-money__day--flex">
+                                    <div class="info-money__day--circle transfers-income-circle"></div>
+                                    <div class="info-money__day--texts">
+                                        <p class="info-money__day--product">Переводы</p>
+                                        <span class="info-money__day--category">Тинькофф</span>
+                                    </div>
+                                    <span class="info-money__day--money income">+4 500,00 ₽</span>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-money__income">
+                    <p class="info-money__history--text">Доходы</p>
+                    <svg viewbox="0 0 10 5">
+                        <defs>
+                          <circle id="circle" cx="2.3" cy="2.5" r="2" stroke-width="0.3" fill="transparent" />
+                        </defs>
+                        <use xlink:href="#circle" stroke="#DE50B6" stroke-dasharray="1,2.09,8.38,30" />
+                        <use xlink:href="#circle" stroke="#BBDE50" stroke-dasharray="0,9.37,8.38,30" />
+                        <use xlink:href="#circle" stroke="#6450DE" stroke-dasharray="4,16.75,6.3" />
+                        <text x="2.3" y="2.8" text-anchor="middle"  class="circle-text">36 965, 76 ₽</text>
+                    </svg>
+                    <div class="info-money__income--categories">
+                        <div class="info-money__income--categories-flex">
+                            <span class="small-circles small-circle-salary"></span>
+                            <p>Зарплата - 40%</p>
+                            <p class="info-money__income--categories--money">30 000, 00 ₽ </p>
+                        </div>
+                        <div class="info-money__income--categories-flex">
+                            <span class="small-circles small-circle-grant"></span>
+                            <p>Стипендия - 30%</p>
+                            <p class="info-money__income--categories--money">2 465, 76 ₽ </p>
+                        </div>
+                        <div class="info-money__income--categories-flex">
+                            <span class="small-circles small-circle-transfers"></span>
+                            <p>Переводы - 30%</p>
+                            <p class="info-money__income--categories--money">4 500, 00 ₽ </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-money__costs">
+                    <p class="info-money__history--text">Расходы</p>
+                    <svg viewbox="0 0 10 5">
+                        <defs>
+                          <circle id="circle" cx="2.3" cy="2.5" r="2" stroke-width="0.3" fill="transparent" />
+                        </defs>
+                        <use xlink:href="#circle" stroke="#8650DE" stroke-dasharray="0,3.09,8.38,30" />
+                        <use xlink:href="#circle" stroke="#DE8C50" stroke-dasharray="0,9.37,8.38,30" />
+                        <use xlink:href="#circle" stroke="#DEB650" stroke-dasharray="4,26.75,6.3" />
+                        <use xlink:href="#circle" stroke="#50DEB3" stroke-dasharray="2,16.75,6.3" />
+                        <text x="2.3" y="2.8" text-anchor="middle"  class="circle-text">32 430, 13 ₽</text>
+                    </svg>
+                    <div class="info-money__income--categories info-money__costs--categories">
+                        <div class="info-money__income--categories-flex info-money__costs--categories-flex">
+                            <span class="small-circles small-circle-products"></span>
+                            <p>Продукты - 40%</p>
+                            <p class="info-money__income--categories--money">20 000, 00 ₽ </p>
+                        </div>
+                        <div class="info-money__income--categories-flex info-money__costs--categories-flex">
+                            <span class="small-circles small-circle-transfers-cost"></span>
+                            <p>Переводы - 30%</p>
+                            <p class="info-money__income--categories--money">4 500, 00 ₽</p>
+                        </div>
+                        <div class="info-money__income--categories-flex info-money__costs--categories-flex">
+                            <span class="small-circles small-circle-required"></span>
+                            <p>Обязательный <br>платеж - 15%</p>
+                            <p class="info-money__income--categories--money">5 239, 00 ₽</p>
+                        </div>
+                        <div class="info-money__income--categories-flex info-money__costs--categories-flex">
+                            <span class="small-circles small-circle-other"></span>
+                            <p>Другое - 15%</p>
+                            <p class="info-money__income--categories--money">2 691, 00 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-operations">
+            <div class="add-operation add-operation-once">
+                <div class="add-operation__btns">
+                    <button class="add-operation__btn add-operation__btn-once add-operation__btn--active">Повседневные операции</button>
+                    <button class="add-operation__btn add-operation__btn-regular">Регулярные операции</button>
+                </div>
+                <form class="form-operations">
+                    <div class="checkbox-wrapper">                 
+                        <label for="costs">
+                            <input type="radio" id="costs" name="contact" value="costs" checked/>
+                            <span class="custom-radio"></span>
+                            Расходы
+                        </label>
+                        <label for="incomes">
+                            <input type="radio" id="incomes" name="contact" value="incomes" />
+                            <span class="custom-radio"></span>
+                            Доходы
+                        </label>
+                    </div>    
+                    <label>
+                        Сумма <br>
+                        <input type="text" class="summ-input" id="summ">
+                        <span class="rub-span">₽</span>
+                    </label>
+                    <label class="check-input">
+                        Счет <br>
+                        <input type="text" class="check" id="check">
+                    </label>
+                    <label>
+                        Дата операции <br>
+                        <input type="date" class="date-input" value="2024-06-11" min="2024-06-11">
+                    </label>
+                    <label>
+                        Комментарий <br>
+                        <input type="text" class="comment">
+                    </label>
+                    <button type="button" class="add-operation__add-btn">Добавить</button>
+                    <div class="add-operation__category">
+                        <p>Категория</p>
+                        <div class="add-operation__category--flex">
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-product"></span>
+                                <p>Продукты</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-transfers"></span>
+                                <p>Переводы</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-cafe"></span>
+                                <p>Кафе и <br> рестораны</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-clothes"></span>
+                                <p>Одежда и <br>аксессуары</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-beauty"></span>
+                                <p>Красота и <br>здоровье</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-house"></span>
+                                <p>Все для дома</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-transport"></span>
+                                <p>Транспорт</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-entertainment"></span>
+                                <p>Развлечения</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-required"></span>
+                                <p>Обязательные <br> платежи</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-other"></span>
+                                <p>Другое</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="add-operation add-operation-regular">
+                <div class="add-operation__btns">
+                    <button class="add-operation__btn add-operation__btn-once">Повседневные операции</button>
+                    <button class="add-operation__btn add-operation__btn-regular add-operation__btn--active">Регулярные операции</button>
+                </div>
+                <form class="form-operations">
+                    <div class="checkbox-wrapper">                 
+                        <label for="costs-second">
+                            <input type="radio" id="costs-second" name="contact" value="costs-second" checked/>
+                            <span class="custom-radio"></span>
+                            Расходы
+                        </label>
+                        <label for="incomes-second">
+                            <input type="radio" id="incomes-second" name="contact" value="incomes-second" />
+                            <span class="custom-radio"></span>
+                            Доходы
+                        </label>
+                    </div>    
+                    <label>
+                        Сумма <br>
+                        <input type="text" class="summ-input" id="summ">
+                        <span class="rub-span">₽</span>
+                    </label>
+                    <label class="check-input">
+                        Счет <br>
+                        <input type="text" class="check" id="check">
+                    </label>
+                    <div class="dates-flex">
+                        <label>
+                            Дата операции <br>
+                            <input type="date" class="date-input" value="2024-06-11" min="2024-06-11">
+                        </label>
+                        <div class="dropdown__date">
+                            <label for="dropdown__date--btn">Периодичность</label>
+                            <button type="button" class="dropdown__date--btn" id="dropdown__date--btn">
+                                Неделя 
+                                <span>
+                                    <img src="assets/down.svg" alt="arrow">
+                                </span>
+                            </button>
+                            <ul class="dropdown__date--list">
+                                <li class="dropdown__date--list-item" data-value="day">День</li>
+                                <li class="dropdown__date--list-item" data-value="week">Неделя</li>
+                                <li class="dropdown__date--list-item" data-value="month">Месяц</li>
+                                <li class="dropdown__date--list-item" data-value="year">Год</li>
+                            </ul>
+                        </div>  
+                    </div>
+                    <label>
+                        Время для уведомлении об операции 
+                          <br>
+                        <input type="time" value="18:00" class="notification-timer">
+                    </label>
+                    <label>
+                        Комментарий <br>
+                        <input type="text" class="comment">
+                    </label>
+                    <button type="button" class="add-operation__add-btn">Добавить</button>
+                    <div class="add-operation__category">
+                        <p>Категория</p>
+                        <div class="add-operation__category--flex">
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-salary"></span>
+                                <p>Зарплата</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-grants"></span>
+                                <p>Стипендия</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-social-payments"></span>
+                                <p>Социальные <br> выплаты</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-deposit"></span>
+                                <p>Проценты по вкладу</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-transfers"></span>
+                                <p>Переводы</p>
+                            </div>
+                            <div class="add-operation__category--once">
+                                <span class="category-once category-other"></span>
+                                <p>Другое</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <img src="assets/whiteLogo.svg" alt="logo">
+            <p>smartmoney</p>
+        </div>
+        <p class="footer-p">Если появились вопросы, свяжитесь с нами <br> E-mail: example@mail.ru</p>
+    </footer>
+
+
+    <script src="/scripts/homepage.js"></script>
+</body>
+</html>

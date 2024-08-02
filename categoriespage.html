@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SmartMoney - Категории</title>
+</head>
+<body id="categoriespage__body">
+    <header>
+        <a href="index.html"><img src="assets/logo.svg" alt="Logo" class="logo"></a>
+        <nav>
+            <ul class="navbar">
+                <li><a href="homepage.html">Главная</a></li>
+                <li><a href="depositpage.html">Счета</a></li>
+                <li><a href="#">Статистика</a></li>
+                <li class="link__active"><a href="#">Категории</a></li>
+                <li><a href="#">Настройки</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="notification"><img src="assets/notification.svg" alt="Notification"></a>
+        <a href="profile.html"><img src="assets/profile.svg" alt="Profile" class="profile"></a>
+    </header>
+    <main>
+        <div class="categories-page">
+            <p class="categories-page__text">Здесь можно редактировать категории для распределения доходов/расходов</p>
+            <h1 class="bg-text">smartmoney</h1>
+            <div class="categories-page__flex">
+                <div class="categories-page__costs">
+                    <p class="categories-page__costs--text">Категории расходов</p>
+                    <div class="categories-page__costs--flex" id="costs-container">
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color purple"></span>
+                                <p class="add-colors__text">Продукты</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-transfers"></span>
+                                <p class="add-colors__text">Переводы</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-cafe"></span>
+                                <p class="add-colors__text">Кафе и <br>рестораны</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-beauty"></span>
+                                <p class="add-colors__text">Красота и <br>здоровье</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-house"></span>
+                                <p class="add-colors__text">Все для дома</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-transport"></span>
+                                <p class="add-colors__text">Транспорт</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-required"></span>
+                                <p class="add-colors__text">Обязательные <br>платежи</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-other"></span>
+                                <p class="add-colors__text">Другое</p>
+                            </div>
+                        </div>
+                        <img src="assets/plusblue.svg" alt="plus" 
+                            class="categories-page__costs--flex--once 
+                                add-category-btn 
+                                add-category-btn--costs"
+                            id="add-costs-btn"    
+                        >
+                    </div>
+                </div>
+                <div class="categories-page__incomes">
+                    <p class="categories-page__costs--text">Категории доходов</p>
+                    <div class="categories-page__costs--flex categories-page__incomes--flex" id="incomes-container">
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card"">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-salary"></span>
+                                <p class="add-colors__text">Зарплата</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-grants"></span>
+                                <p class="add-colors__text">Стипендия</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-social-payments"></span>
+                                <p class="add-colors__text">Социальные<br> выплаты</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color transfers-income-circle"></span>
+                                <p class="add-colors__text">Переводы</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color purple"></span>
+                                <p class="add-colors__text">Другое</p>
+                            </div>
+                        </div>
+                        <div class="categories-page__costs--flex--once">   
+                            <div class="categories-page__costs--flex--once-icons">
+                                <img src="assets/editIcon.svg" alt="edit" class="icon icon-edit">
+                                <img src="assets/deleteIcon.svg" alt="delete" class="icon delete-card">
+                            </div>
+                            <div class="categories-page__costs--flex--once--category">
+                                <span class="add-colors__color category-deposit"></span>
+                                <p class="add-colors__text">Проценты <br>по вкладу</p>
+                            </div>
+                        </div>
+                        <img src="assets/plusblue.svg" alt="plus" 
+                            class="categories-page__costs--flex--once 
+                                add-category-btn 
+                                add-category-btn--incomes"
+                            id="add-incomes-btn"    
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-category add-category__incomes">
+            <div class="add-category__info">
+                <div class="add-category__add-color incomes-category__edit-color">
+                    <img src="assets/plus.svg" alt="add" class="add-deposit__options--plus incomes__plus">
+                </div>
+                <label for="add-category__category-input--incomes" class="add-category__category">
+                    Название категории
+                    <input type="text" id="add-category__category-input--incomes" class="add-category__category--input">
+                </label>
+            </div>
+            <div class="add-category__colors">
+                <div class="add-category__color incomes-category__color category-entertainment"></div>
+                <div class="add-category__color incomes-category__color transfers-income-circle"></div>
+                <div class="add-category__color incomes-category__color category-required"></div>
+                <div class="add-category__color incomes-category__color category-other"></div>
+                <div class="add-category__color incomes-category__color category-clothes"></div>
+                <div class="add-category__color incomes-category__color category-deposit"></div>
+                <div class="add-category__color incomes-category__color house-circle"></div>
+                <div class="add-category__color incomes-category__color category-transfers"></div>
+                <div class="add-category__color incomes-category__color category-social-payments"></div>
+                <div class="add-category__color incomes-category__color dark-pink"></div>
+                <div class="add-category__color incomes-category__color beauty-circle"></div>
+                <div class="add-category__color incomes-category__color category-salary"></div>
+                <div class="add-category__color incomes-category__color category-grants"></div>
+                <div class="add-category__color incomes-category__color cafe-circle"></div>
+                <div class="add-category__color incomes-category__color category-transport"></div>
+            </div>
+            <button type="button" class="add-deposit-btn add-category__btn add-category__btn--incomes">Добавить счет</button>
+        </div>
+        <div class="add-category add-category__costs">
+            <div class="add-category__info">
+                <div class="add-category__add-color costs-category__edit-color">
+                    <img src="assets/plus.svg" alt="add" class="add-deposit__options--plus costs__plus">
+                </div>
+                <label for="add-category__category-input--costs" class="add-category__category">
+                    Название категории
+                    <input type="text" id="add-category__category-input--costs" class="add-category__category--input">
+                </label>
+            </div>
+            <div class="add-category__colors">
+                <div class="add-category__color costs-category__color category-entertainment"></div>
+                <div class="add-category__color costs-category__color transfers-income-circle"></div>
+                <div class="add-category__color costs-category__color category-required"></div>
+                <div class="add-category__color costs-category__color category-other"></div>
+                <div class="add-category__color costs-category__color category-clothes"></div>
+                <div class="add-category__color costs-category__color category-deposit"></div>
+                <div class="add-category__color costs-category__color house-circle"></div>
+                <div class="add-category__color costs-category__color category-transfers"></div>
+                <div class="add-category__color costs-category__color category-social-payments"></div>
+                <div class="add-category__color costs-category__color dark-pink"></div>
+                <div class="add-category__color costs-category__color beauty-circle"></div>
+                <div class="add-category__color costs-category__color category-salary"></div>
+                <div class="add-category__color costs-category__color category-grants"></div>
+                <div class="add-category__color costs-category__color cafe-circle"></div>
+                <div class="add-category__color costs-category__color category-transport"></div>
+            </div>
+            <button type="button" class="add-deposit-btn add-category__btn add-category__btn--costs">Добавить счет</button>
+        </div>
+        <div class="add-category add-category__edit" id="edit-category-modal">
+            <div class="add-category__info">
+                <div class="add-category__add-color edit-category__edit-color">
+                    <img src="assets/plus.svg" alt="add" class="add-deposit__options--plus edit-category--plus">
+                </div>
+                <label for="edit-category__category-input" class="add-category__category">
+                    Название категории
+                    <input type="text" id="edit-category__category-input" class="add-category__category--input">
+                </label>
+            </div>
+            <div class="add-category__colors">
+                <div class="add-category__color edit-category__color category-entertainment"></div>
+                <div class="add-category__color edit-category__color transfers-income-circle"></div>
+                <div class="add-category__color edit-category__color category-required"></div>
+                <div class="add-category__color edit-category__color category-other"></div>
+                <div class="add-category__color edit-category__color category-clothes"></div>
+                <div class="add-category__color edit-category__color category-deposit"></div>
+                <div class="add-category__color edit-category__color house-circle"></div>
+                <div class="add-category__color edit-category__color category-transfers"></div>
+                <div class="add-category__color edit-category__color category-social-payments"></div>
+                <div class="add-category__color edit-category__color dark-pink"></div>
+                <div class="add-category__color edit-category__color beauty-circle"></div>
+                <div class="add-category__color edit-category__color category-salary"></div>
+                <div class="add-category__color edit-category__color category-grants"></div>
+                <div class="add-category__color edit-category__color cafe-circle"></div>
+                <div class="add-category__color edit-category__color category-transport"></div>
+            </div>
+            <button type="button" class="add-deposit-btn add-category__btn edit-category__btn">Изменить счет</button>
+        </div>
+    </main> 
+    <footer>
+        <div class="footer-text">
+            <img src="assets/whiteLogo.svg" alt="logo">
+            <p>smartmoney</p>
+        </div>
+        <p class="footer-p">Если появились вопросы, свяжитесь с нами <br> E-mail: example@mail.ru</p>
+    </footer>
+
+    <script src="scripts/categories.js"></script>
+</body>
+</html>

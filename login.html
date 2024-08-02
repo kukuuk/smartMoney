@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Авторизация</title>
+</head>
+<body>
+    <div class="auth login-form">
+        <h1 class="auth-page__bg-text">smartmoney</h1>
+        <form class="auth-page">
+            <div class="auth-page__btns">
+                <button type="button" class="auth-page__login login-form__login__btn active-login-btn">Вход</button>
+                <button type="button" class="auth-page__registration login-form__reg__btn">Регистрация</button>
+            </div>
+            <p class="auth-page__text">Добро пожаловать на<br> платформу SMARTMONEY!</p>
+            <input type="text" placeholder="Логин" class="input input-login">
+            <input type="password" placeholder="Пароль" class="input input-password">
+            <div>
+                <input type="checkbox" class="custom-checkbox" id="checkbox" name="checkbox" value="yes">
+                <label for="checkbox" class="remember">Запомнить меня</label>
+            </div>
+            <button type="submit" class="main-login-btn">Войти</button>
+            <p class="no-acc">Нет аккаунта? <a href="#" class="no-acc__register">Регистрация</a></p>
+            <a href="index.html">Вернуться</a>
+        </form>
+    </div>
+    <div class="auth reg-form hidden">
+        <h1 class="auth-page__bg-text reg-page__bg-text">smartmoney</h1>
+        <form class="auth-page">
+            <div class="auth-page__btns">
+                <button type="button" class="auth-page__login reg-form__login-btn">Вход</button>
+                <button type="button" class="auth-page__registration reg-form__reg-btn active-login-btn">Регистрация</button>
+            </div>
+            <input type="text" placeholder="Логин" class="input input-login">
+            <input type="email" placeholder="Email" class="input input-email">
+            <input type="password" placeholder="Пароль" class="input input-password">
+            <input type="password" placeholder="Подтвердите пароль" class="input input-password">
+            <button type="submit" class="main-login-btn main-reg-btn">Регистрация</button>
+            <p class="no-acc">Есть аккаунт?<a href="#" class="no-acc__register no-acc-login">Войти</a></p>
+            <a href="index.html">Вернуться</a>
+        </form>
+    </div>
+
+    <script src="/scripts/login.js"></script>
+</body>
+</html>

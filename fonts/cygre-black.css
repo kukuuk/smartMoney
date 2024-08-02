@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Cygre-Black';
+	src: url('../fonts/cygre-black.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/cygre-black.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/cygre-black.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/cygre-black.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/cygre-black.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/cygre-black.svg#cygre-black') format('svg'); /* Chrome < 4, Legacy iOS */
+}

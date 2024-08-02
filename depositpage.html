@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SmartMoney - Счета</title>
+</head>
+<body id="depositpage-body">
+    <header>
+        <a href="index.html"><img src="assets/logo.svg" alt="Logo" class="logo"></a>
+        <nav>
+            <ul class="navbar">
+                <li><a href="homepage.html">Главная</a></li>
+                <li class="link__active"><a href="#">Счета</a></li>
+                <li><a href="#">Статистика</a></li>
+                <li><a href="categoriespage.html">Категории</a></li>
+                <li><a href="#">Настройки</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="notification"><img src="assets/notification.svg" alt="Notification"></a>
+        <a href="profile.html"><img src="assets/profile.svg" alt="Profile" class="profile"></a>
+    </header>
+    <main class="main">
+        <div class="deposit-page">
+            <p class="deposit-page__text">Здесь можно редактировать счета и выполнить переводы между ними.</p>
+            <div class="deposit-page__btns">
+                <button type="button" class="transfer-btn">
+                    <img src="assets/transferImg.svg" alt="transfer">
+                    Перевод между счетами
+                </button>
+                <button type="button" class="add-deposit-btn">Добавить счет</button>
+            </div>
+            <div class="deposit-page__deposits">
+                <div class="deposit-page__deposit">
+                    <span class="add-colors__color colors-color orange"></span>
+                    <p class="deposit-page__deposit--card">Зарплатная карта</p>
+                    <span class="deposit-page__deposit--summ">30 768, 45 ₽</span>
+                    <img src="assets/editIcon.svg" alt="edit" class="deposit-page__deposit--edit">
+                    <img src="assets/deleteIcon.svg" alt="delete" class="deposit-page__deposit--delete">
+                </div>
+                <div class="deposit-page__deposit">
+                    <span class="add-colors__color colors-color turquoise"></span>
+                    <p class="deposit-page__deposit--card">Кредитная карта</p>
+                    <span class="deposit-page__deposit--summ">14 200, 73 ₽</span>
+                    <img src="assets/editIcon.svg" alt="edit" class="deposit-page__deposit--edit">
+                    <img src="assets/deleteIcon.svg" alt="delete" class="deposit-page__deposit--delete">
+                </div>
+                <div class="deposit-page__deposit">
+                    <span class="add-colors__color colors-color purple"></span>
+                    <p class="deposit-page__deposit--card">Тинькофф</p>
+                    <span class="deposit-page__deposit--summ">10 343, 00 ₽</span>
+                    <img src="assets/editIcon.svg" alt="edit" class="deposit-page__deposit--edit">
+                    <img src="assets/deleteIcon.svg" alt="delete" class="deposit-page__deposit--delete">
+                </div>
+            </div>
+        </div>
+        <div class="add-deposit">
+            <div class="add-deposit__options">
+                <span class="add-deposit__options--span">
+                    <img src="assets/plus.svg" alt="add" class="add-deposit__options--plus">
+                </span>
+                <div class="add-deposit__options--inputs">
+                    <label for="deposit-name" class="add-deposit__options--label">
+                        Название счета
+                        <input type="text" id="deposit-name" class="add-deposit__options--input">
+                    </label>
+                    <label for="deposit-sum" class="add-deposit__options--label">
+                        Сумма на счету
+                        <input type="text" id="deposit-sum" class="add-deposit__options--input">
+                    </label>
+                </div>
+            </div>
+            <div class="add-colors">
+                <span class="add-colors__color red">
+                </span>
+    
+                <span class="add-colors__color orange">
+                </span>
+    
+                <span class="add-colors__color ocher">
+                </span>
+    
+                <span class="add-colors__color green">
+                </span>
+                
+                <span class="add-colors__color light-green">
+                </span>
+    
+                <span class="add-colors__color turquoise">
+                </span>
+    
+                <span class="add-colors__color blue">
+                </span>
+    
+                <span class="add-colors__color purple">
+                </span>
+    
+                <span class="add-colors__color pink">
+                </span>
+    
+                <span class="add-colors__color light-pink">
+                </span>
+            </div>
+            <button type="button" class="add-deposit-btn modal-add-deposit-btn">Добавить счет</button>
+        </div>
+        <div class="edit-deposit">
+            <div class="add-deposit__options">
+                <span class="edit-deposit__options--span">
+                    <img src="assets/plus.svg" alt="add" class="edit-deposit__options--plus">
+                </span>
+                <div class="add-deposit__options--inputs">
+                    <label for="edit-deposit-name" class="add-deposit__options--label">
+                        Название счета
+                        <input type="text" id="edit-deposit-name" class="add-deposit__options--input">
+                    </label>
+                    <label for="edit-deposit-sum" class="add-deposit__options--label">
+                        Сумма на счету
+                        <input type="text" id="edit-deposit-sum" class="add-deposit__options--input">
+                    </label>
+                </div>
+            </div>
+            <div class="add-colors">
+                <span class="edit-colors__color red">
+                </span>
+                <span class="edit-colors__color orange">
+                </span>
+                <span class="edit-colors__color ocher">
+                </span>   
+                <span class="edit-colors__color green">
+                </span>               
+                <span class="edit-colors__color light-green">
+                </span>   
+                <span class="edit-colors__color turquoise">
+                </span>   
+                <span class="edit-colors__color blue">
+                </span>    
+                <span class="edit-colors__color purple">
+                </span>   
+                <span class="edit-colors__color pink">
+                </span>    
+                <span class="edit-colors__color light-pink">
+                </span>
+            </div>
+            <button type="button" class="add-deposit-btn modal-add-deposit-btn edit-deposit-btn">Изменить счет</button>
+        </div>
+        <div class="transfers-page">
+            <p class="transfers-page__text">Перевод между счетами</p>
+            <form class="transfers-page__form">
+                <div class="transfers-page__dropdown">
+                    <div class="transfers-page__dropdown--flex">
+                        <label class="transfers-page__dropdown--label" for="transfers-page__dropdown--btn">
+                            Откуда
+                        </label>
+                        <button type="button" class="transfers-page__dropdown--btn" id="transfers-page__dropdown--btn">
+                            Зарплатная карта 
+                            <span class="transfers-page__dropdown--btn--span">30 768, 45 ₽ </span>
+                            <img 
+                            src="assets/blackArrowDown.svg" 
+                            alt="arrow" 
+                            class="transfers-page__dropdown--btn--arrow"
+                            >
+                        </button>
+                    </div>
+                    <ul class="transfers-page__dropdown--list dropdown-hidden">
+                        <li class="transfers-page__dropdown--list-item">
+                            Зарплатная карта 
+                            <span class="transfers-page__dropdown--list-span">30 768, 45 ₽ </span>
+                        </li>
+                        <li class="transfers-page__dropdown--list-item">
+                            Кредитная карта 
+                            <span class="transfers-page__dropdown--list-span">14 200, 73 ₽  </span>
+                        </li>
+                        <li class="transfers-page__dropdown--list-item">
+                            Тинькофф 
+                            <span class="transfers-page__dropdown--list-span">10 343, 00 ₽ </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="transfers-page__dropdown">
+                    <div class="transfers-page__dropdown--flex">
+                        <label class="transfers-page__dropdown--label" for="transfers-page__dropdown--btn-second">
+                            Куда
+                        </label>
+                        <button type="button" class="transfers-page__dropdown--btn-second" id="transfers-page__dropdown--btn-second">
+                            Кредитная карта 
+                            <span class="transfers-page__dropdown--btn--span">14 200, 73 ₽</span>
+                            <img 
+                            src="assets/blackArrowDown.svg" 
+                            alt="arrow" 
+                            class="transfers-page__dropdown--btn--arrow"
+                            >
+                        </button>
+                    </div>
+                    <ul class="transfers-page__dropdown--list-second dropdown-hidden-second">
+                        <li class="transfers-page__dropdown--list-item-second">
+                            Зарплатная карта 
+                            <span class="transfers-page__dropdown--list-span">30 768, 45 ₽ </span>
+                        </li>
+                        <li class="transfers-page__dropdown--list-item-second">
+                            Кредитная карта 
+                            <span class="transfers-page__dropdown--list-span">14 200, 73 ₽  </span>
+                        </li>
+                        <li class="transfers-page__dropdown--list-item-second">
+                            Тинькофф 
+                            <span class="transfers-page__dropdown--list-span">10 343, 00 ₽ </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="transfers-page__form--inputs">
+                    <div class="transfers-page__form--label">
+                        <label for="transfers-page__form--summ">
+                            Сумма
+                        </label>
+                        <input type="text" id="transfers-page__form--summ">
+                        <span class="transfers-page__rub">₽</span>
+                    </div>
+                    <div class="transfers-page__form--label">
+                        <label for="transfers-page__form--date">Дата</label>
+                        <input type="date" id="transfers-page__form--date">
+                    </div>
+                </div>
+                <div class="transfers-page__form--comment">
+                    <label for="transfers-page__form--comm">Комментарий</label>
+                    <input type="text" id="transfers-page__form--comm">
+                </div>
+                <button type="button" class="transfers-page__btn">Перевести</button>
+            </form>
+        </div>
+    </main>
+    <footer class="depositpage-footer">
+        <div class="footer-text">
+            <img src="assets/whiteLogo.svg" alt="logo">
+            <p>smartmoney</p>
+        </div>
+        <p class="footer-p">Если появились вопросы, свяжитесь с нами <br> E-mail: example@mail.ru</p>
+    </footer>
+
+    <script src="/scripts/depositpage.js"></script>
+</body>
+</html>
